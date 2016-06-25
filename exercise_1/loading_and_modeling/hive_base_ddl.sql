@@ -12,7 +12,7 @@ Hospital_Type STRING,
 Hospital_Ownership STRING,
 Emergency_Services STRING
 )
-row format serde 'prg.apache.hadoop.hive.serde2.OpenCSVSerde'
+row format serde 'org.apache.hadoop.hive.serde2.OpenCSVSerde'
 with serdeproperties(
 "seperatorChar"=",",
 "quoteChar" = '"',
@@ -42,7 +42,7 @@ Measure_Start_Date Date(),
 Measure_End_Date Date()
 
 )
-row format serde 'prg.apache.hadoop.hive.serde2.OpenCSVSerde'
+row format serde 'org.apache.hadoop.hive.serde2.OpenCSVSerde'
 with serdeproperties(
 "seperatorChar"=",",
 "quoteChar" = '"',
@@ -77,7 +77,7 @@ Measure_Start_Date Date(),
 Measure_End_Date Date()
 
 )
-row format serde 'prg.apache.hadoop.hive.serde2.OpenCSVSerde'
+row format serde 'org.apache.hadoop.hive.serde2.OpenCSVSerde'
 with serdeproperties(
 "seperatorChar"=",",
 "quoteChar" = '"',
