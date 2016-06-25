@@ -52,6 +52,7 @@ stored as TEXTFILE
 location '/user/w205/hospital_compare';
 
 
+
 drop table survey_hospital;
 create external table survey_hospital(
 Provider_ID int,

@@ -14,7 +14,7 @@ Emergency_Services STRING
 )
 row format serde 'org.apache.hadoop.hive.serde2.OpenCSVSerde'
 with serdeproperties(
-"seperatorChar"=",",
+"separatorChar" = ",",
 "quoteChar" = '"',
 "escapeChar" = '\\'
 )
@@ -38,8 +38,8 @@ Measure_Name STRING,
 Score STRING,
 Sample STRING,
 Footnote STRING,
-Measure_Start_Date Date(),
-Measure_End_Date Date()
+Measure_Start_Date Date,
+Measure_End_Date Date
 
 )
 row format serde 'org.apache.hadoop.hive.serde2.OpenCSVSerde'
@@ -74,8 +74,8 @@ Number_of_Completed_Surveys STRING,
 Number_of_Completed_Surveys_Footnote STRING,
 Survey_Response_Rate_Percent int,
 Survey_Response_Rate_Percent_Footnote STRING,
-Measure_Start_Date Date(),
-Measure_End_Date Date()
+Measure_Start_Date Date,
+Measure_End_Date Date
 
 )
 row format serde 'org.apache.hadoop.hive.serde2.OpenCSVSerde'
