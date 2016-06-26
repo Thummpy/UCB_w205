@@ -1,0 +1,1 @@
+create table effective_hospital_s row format delimited fields terminated by '\t' stored as textfile location '/user/w205/hospital_compare/effectiveHospital' as select Provider_ID, Condition, Measure_ID, Measure_Name, Score, Sample, Footnote, Measure_Start_Date, Measure_End_Date from effective_hospital;
