@@ -8,7 +8,17 @@ unzip 'Nqcy71p9Ss2RSBWDmP77H1DQXcyacr2khotGbDHHW_s?content_type=application%2Fzi
 ls | grep csv |xargs -i -t sed {} -i -e '1,1d'
 
 #make project folder
-hdfs dfs mkdir /users/w205/hospital_compare/
+hdfs dfs -mkdir /user/w205/hospital_compare/
 
-#move csv files to hdfs
-ls | grep csv |xargs -i -t hdfs dfs -put {} /user/w205/hospital_compare/
+#make table1 folder
+hdfs dfs -mkdir /user/w205/hospital_compare/effectiveHospital
+hdfs dfs -put Timely_and_Effective_Care_-_Hospital.csv /user/w205/hospital_compare/effectiveHospital/
+
+#make table2 folder
+hdfs dfs -mkdir /user/w205/hospital_compare/hospitalGeneral
+hdfs dfs -put Hospital_General_Information.csv /user/w205/hospital_compare/hospitalGeneral/
+
+#make table3 folder
+hdfs dfs -mkdir /user/w205/hospital_compare/surveyHospital
+hdfs dfs -put HCAHPS_-_Hospital.csv /user/w205/hospital_compare/surveyHospital/
+
