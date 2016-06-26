@@ -25,6 +25,13 @@ location '/user/w205/hospital_compare';
 drop table effective_hospital;
 create external table effective_hospital(
 Provider_ID int,
+Hospital_Name STRING,
+Address STRING,
+City STRING,
+State STRING,
+ZIP_Code int,
+County_Name STRING,
+Phone_Number int,
 Condition STRING,
 Measure_ID STRING,
 Measure_Name STRING,
@@ -49,6 +56,13 @@ location '/user/w205/hospital_compare';
 drop table survey_hospital;
 create external table survey_hospital(
 Provider_ID int,
+Hospital_Name STRING,
+Address STRING,
+City STRING,
+State STRING,
+ZIP_Code int,
+County_Name STRING,
+Phone_Number int,
 HCAHPS_Measure_ID STRING,
 HCAHPS_Question STRING,
 HCAHPS_Answer_Description STRING,
