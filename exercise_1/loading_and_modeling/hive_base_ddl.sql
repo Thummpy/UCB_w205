@@ -19,7 +19,7 @@ with serdeproperties(
 "escapeChar" = '\\'
 )
 stored as TEXTFILE
-location '/user/w205/hospital_compare/Hospital_General_Information.csv';
+location '/user/w205/hospital_compare/hospitalGeneral';
 
 
 drop table effective_hospital;
@@ -49,7 +49,7 @@ with serdeproperties(
 "escapeChar" = '\\'
 )
 stored as TEXTFILE
-location '/user/w205/hospital_compare/Timely_and_Effective_Care_-_Hospital.csv';
+location '/user/w205/hospital_compare/effectiveHospital';
 
 
 
@@ -85,7 +85,7 @@ with serdeproperties(
 "escapeChar" = '\\'
 )
 stored as TEXTFILE
-location '/user/w205/hospital_compare/HCAHPS_-_Hospital.csv';
+location '/user/w205/hospital_compare/surveyHospital';
 
 
 
