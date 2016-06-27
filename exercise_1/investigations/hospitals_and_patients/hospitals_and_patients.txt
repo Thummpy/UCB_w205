@@ -1,0 +1,4 @@
+meanHospital_starRating_cor	varHospital_starRating_cor
+0.13650990431314186     	-0.11248004750051954
+
+There looks to be a very weak correlation between patients' star ratings and the mean hospital proceedural rating, and also a very weak negative rating between patients' star ratings and the hospitals' variance in proceedural ratings. While it is difficult to judge because of the weak nature of it, it is interesting that it is positively correlated to the mean and negatively correlated to the variance. This suggests significance, however since we only tested with 8 features perhaps the rest of the star ratings are explained by one or more of the remaining features.

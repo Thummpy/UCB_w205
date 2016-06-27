@@ -1,0 +1,24 @@
+Hospital Name					Aggregate Score	Mean Score		Variance
+GRIFFIN HOSPITAL        			0.871875        98.0349236046149        1086.1210937500002
+SHERMAN HOSPITAL				0.87		97.70750471766584	1081.75
+OVERLAND PARK REG MED CTR			0.87125		97.26896406808153	1085.3593750000002
+HOLLAND COMMUNITY HOSPITAL			0.87		96.14319456746384	1081.75
+LANSDALE HOSPITAL				0.87125		99.65698419478855	0.24489795918367346
+BON SECOURS-ST FRANCIS XAVIER HOSPITAL		0.870625	93.23553002384566	1083.02734375
+ROPER HOSPITAL					0.87		99.2457507082153	0.24489795918367346
+BAYLOR HEART AND VASCULAR HOSPITAL		0.87375		99.640758873929		0.12244897959183675
+BAYLOR REGIONAL MEDICAL CENTER AT PLANO		0.871875	99.28787526181057	0.19387755102040818
+THE HEART HOSPITAL BAYLOR PLANO			0.87		99.31241534988713	0.5306122448979592
+
+For this study I selected 8 measurements which I thought best indicated quality of care. These measurements were:
+
+Discharge instructions
+Healthcare workers given influenza vaccination
+Immunization for influenza
+(inverse) Percent of newborns whose deliveries were scheduled early (1-3 weeks early), when a scheduled delivery was not medically necessary
+Prophylactic Antibiotic Initiated Within One Hour Prior to Surgical Incision
+Prophylactic antibiotic received within 1 hour prior to surgical incision
+Prophylactic Antibiotic Selection for Surgical Patients
+Prophylactic antibiotics discontinued within 24 hours after surgery end time
+
+The aggregate score penalizes non-participation in one or more of these measurements, and takes an aggregated average. The Mean score weights the measurements by frequency, providing some advantage for specializing in an area. This is appropriate as one might go to a particular hospital because it does well in an area you need. I believe this will correlate better with user satisfaction later. Note that "Percent of newborns whose deliveries were scheduled early (1-3 weeks early), when a scheduled delivery was not medically necessary" is actually a negative indicator, and as such I took the negative measure (100-%) into account for scoring.

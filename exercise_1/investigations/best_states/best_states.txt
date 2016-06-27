@@ -1,0 +1,13 @@
+State	Aggregate Score		Mean Score		Variance
+NE      88.59683794466403       93.26626488939309       687.7603852583235       
+RI	88.21176470588236	91.55462333221838	753.2610380622839
+NH	88.15131578947368	94.60827443334146	863.1251298476451
+MD	87.51851851851852	96.10308389044641	817.4394718792869
+VT	87.03378378378379	83.19534148687646	820.5292640613588
+WI	86.97622377622378	93.02880083087001	858.1714626632101
+ME	86.68446601941747	90.67805355454654	896.1116033556414
+MT	86.5673076923077	90.46374181672947	721.997072238659
+NV	86.5505617977528	85.55786669005822	828.9075558641588
+IA	86.48994974874371	92.3646424913176	795.8102004999876
+
+The same measurements and assumptions were made for this study where were made for the hospital focused ranking. This study, however, was focused at a state level aggregation. While the aggregate and mean score look similar to before, the variance is much higher. This is due to the wider scope which includes measurements of different hospitals in a fairly wide geographical area. Even if a group contained two high quality hospitals, they may have different specializations which would produce a high variance outcome.
